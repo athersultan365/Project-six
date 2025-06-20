@@ -1,0 +1,2570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+
+
+    <style>
+        /*1vh = 10.8px*/
+        /* Universal Seletor*/
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+            padding: 0px;
+        }
+
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            height: 110vh;
+            background-image: url(./NEURON/h1-s1.jpg);
+            /* background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127)); */
+        }
+
+        .top {
+            width: 100%;
+            height: 10vh;
+            display: inline-block;
+            vertical-align: top;
+            /* border: 1px solid black */
+            background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127));
+        }
+
+        .email {
+            width: 350px;
+            height: 5vh;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 100px;
+            margin-top: 15px;
+
+        }
+
+        .email h4 {
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            /* margin-left: 100px; */
+            margin-top: 5px;
+        }
+
+        .email p {
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            margin-top: 5px;
+
+        }
+
+        .icon {
+            width: 150px;
+            height: 5vh;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 600px;
+            margin-top: 15px;
+            letter-spacing: 5px;
+            color: white;
+            /* padding-top: 5px; */
+        }
+
+        .navigation {
+            width: 100%;
+            height: 10vh;
+            border: 1px solid red;
+            background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127));
+            padding: 1px;
+        }
+
+        .logowhite {
+            width: 11%;
+            height: 50%;
+            margin-left: 100px;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 15px;
+        }
+
+        .menu-list {
+            width: 620px;
+            height: 50px;
+            /* border: 1px solid white; */
+            /* color: white; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 260px;
+            padding-top: 5px;
+            margin-top: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            color: white;
+
+        }
+
+        /* ========================== */
+
+        .home-grey {
+            color: rgb(179, 199, 207);
+        }
+
+        .home,
+        .about,
+        .features,
+        .pages,
+        .shop,
+        .blog {
+            margin-left: 30px;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .home1 {
+
+            color: blue;
+
+        }
+
+
+        .drop-down {
+            width: 220px;
+            height: 0px;
+            background-color: white;
+            position: absolute;
+            top: 40px;
+            left: 0px;
+            overflow: hidden;
+            transition: 0.4s;
+            /* visibility: hidden; */
+            /* opacity: 0; */
+        }
+
+
+        .drop-down ul li {
+            list-style: none;
+            margin-top: 20px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .home:hover .drop-down {
+            height: 150px;
+        }
+
+
+
+        .home:hover .drop-down {
+            visibility: visible;
+            /* opacity: 1;  */
+        }
+
+        .home2,
+        .home3 {
+            color: black
+        }
+
+        .home2:hover {
+            color: blue;
+        }
+
+        .home3:hover {
+            color: blue;
+        }
+
+        /* =============================================== */
+        /* ______________++++++++++++++++++++ */
+
+
+        .drop-down1 {
+            width: 220px;
+            height: 0px;
+            background-color: white;
+            position: absolute;
+            top: 40px;
+            left: -200px;
+            overflow: hidden;
+            transition: 0.4s;
+            /* visibility: hidden; */
+            /* opacity: 0; */
+        }
+
+        .drop-down1 ul li {
+            list-style: none;
+            margin-top: 20px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        #drop2 {
+            margin-top: -160px;
+            margin-left: 200px;
+            color: black;
+        }
+
+        #drop3 {
+            margin-top: -160px;
+            margin-left: 400px;
+            color: black;
+        }
+
+        .pages:hover .drop-down1 {
+            width: 600px;
+            height: 200px;
+
+        }
+
+        .pages:hover.drop-down1 {
+            visibility: visible;
+
+        }
+
+        .Software,
+        .mobile,
+        .team,
+        .Privacy {
+            color: black;
+
+        }
+
+        .Software:hover {
+            color: blue;
+
+        }
+
+        .mobile:hover {
+            color: blue;
+
+        }
+
+        .team:hover {
+            color: blue;
+
+        }
+
+        .Privacy:hover {
+            color: blue;
+        }
+
+        .pricing:hover {
+            color: blue;
+        }
+
+        .chatbot:hover {
+            color: blue;
+        }
+
+        .login:hover {
+            color: blue;
+        }
+
+        .register:hover {
+            color: blue;
+        }
+
+        .download:hover {
+            color: blue;
+        }
+
+        .coming:hover {
+            color: blue;
+        }
+
+        .error:hover {
+            color: blue;
+        }
+
+        /* =====Shop sub list========++++++++++++++++++++ */
+        .shop-grey:hover {
+            color: rgb(179, 199, 207);
+        }
+
+
+        .drop-down4 {
+            width: 220px;
+            height: 0px;
+            background-color: white;
+            position: absolute;
+            top: 40px;
+            left: 0px;
+            overflow: hidden;
+            transition: 0.4s;
+            /* visibility: hidden; */
+            /* opacity: 0; */
+        }
+
+
+        .drop-down4 ul li {
+            list-style: none;
+            margin-top: 20px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .shop:hover .drop-down4 {
+            height: 200px;
+        }
+
+        .shop:hover .drop-down4 {
+            visibility: visible;
+            /* opacity: 1;  */
+        }
+
+        .shop1,
+        .shop-single,
+        .cart,
+        .checkout {
+            color: black;
+
+        }
+
+        .shop-gray:hover {
+            color: gray;
+
+        }
+
+        .shop1:hover {
+            color: blue;
+
+        }
+
+        .shop-single:hover {
+            color: blue;
+
+        }
+
+        .cart:hover {
+            color: blue;
+
+        }
+
+        .checkout:hover {
+            color: blue;
+
+        }
+
+        /* ============blog sub tage======================== */
+
+        .drop-down5 {
+            width: 220px;
+            height: 0px;
+            background-color: white;
+            position: absolute;
+            top: 40px;
+            left: 0px;
+            overflow: hidden;
+            transition: 0.4s;
+            /* visibility: hidden; */
+            /* opacity: 0; */
+        }
+
+
+        .drop-down5 ul li {
+            list-style: none;
+            margin-top: 20px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .blog:hover .drop-down5 {
+            height: 200px;
+        }
+
+        .blog:hover .drop-down5 {
+            visibility: visible;
+            /* opacity: 1;  */
+        }
+
+        .blog1,
+        .left-side,
+        .right-side,
+        .blog-detail {
+            color: black;
+        }
+
+        .blog-gray:hover {
+            color: gray;
+
+        }
+
+        .blog1:hover {
+            color: blue;
+
+        }
+
+        .left-side:hover {
+            color: blue;
+
+        }
+
+        .right-side:hover {
+            color: blue;
+
+        }
+
+        .blog-detail:hover {
+            color: blue;
+
+        }
+
+        /* =========================== */
+        .icon2 {
+            width: 70px;
+            height: 5vh;
+            /* border: 1px solid white; */
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 1200px;
+            margin-top: -50px;
+
+        }
+
+        #bage {
+            margin-top: 5px;
+            margin-left: 8px;
+        }
+
+        #glass {
+            margin-top: 6px;
+            margin-left: 8px;
+        }
+
+        .linercolor {
+            width: 100%;
+            height: 91vh;
+            /* border: 1px solid black; */
+            background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127));
+            /* padding-top: -10px; */
+            margin-top: -20px;
+
+        }
+
+        /* ????????????????????????? */
+        .text {
+            width: 50%;
+            height: 90vh;
+            /* background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127)); */
+            /* border: 1px solid brown; */
+            color: white;
+            display: inline-block;
+            vertical-align: top;
+            /* padding-top: -20px; */
+            /* margin-top: -20px; */
+
+        }
+
+        .text h1 {
+            margin-top: 100px;
+            font-size: 50px;
+            margin-left: 80px;
+
+        }
+
+        .text p {
+            /* margin-top: 100px; */
+            font-size: 25px;
+            margin-left: 80px;
+        }
+
+        .button,
+        .button1 {
+            width: 510PX;
+            height: 38px;
+            /* background-color: aliceblue; */
+            /* color: white; */
+            margin-top: 50px;
+            margin-left: 80px;
+
+        }
+
+        .learmore {
+            width: 150px;
+            height: 37px;
+            border: 1px solid white;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 30px;
+            margin-left: 60px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
+        .joinnow {
+            width: 150px;
+            height: 37px;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 30px;
+            margin-left: 60px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .pic-two {
+            width: 48%;
+            height: 90vh;
+            /* background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127)); */
+            /* border: 2px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+            /* margin-top: -20px; */
+
+
+        }
+
+        .animation {
+            width: 24%;
+            height: 95vh;
+            /* border: 1px solid red; */
+            /* margin-left: 400px; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .anim {
+
+            /* margin-top: 20px; */
+            animation-name: moves;
+            animation-duration: 2s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes moves {
+            0% {
+                margin-top: 0px;
+            }
+
+            100% {
+                margin-top: 40px;
+            }
+        }
+
+
+        .animation1 {
+            width: 25.4%;
+            height: 90vh;
+            /* border: 1px solid red; */
+            /* margin-left: 400px; */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .anim2 {
+            width: 300px;
+            height: 400px;
+            margin-top: 150px;
+            margin-left: 180px;
+        }
+
+
+
+        /* ////////////????????????////////////// */
+        .section2 {
+            width: 100%;
+            height: 115vh;
+            /* border: 1px solid blue; */
+        }
+
+        .fivepeice {
+            width: 95%;
+            height: 638px;
+            /* border: 1px solid red; */
+            margin-top: 100px;
+            margin-left: 30px;
+        }
+
+        .Aichippest {
+            width: 25%;
+            height: 96%;
+            /* border: 1px solid green; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+
+
+        .inteli {
+            width: 100px;
+            height: 100px;
+            /* border: 1px solid blue; */
+            margin-left: 30%;
+            margin-top: 25px;
+        }
+
+        .advance {
+            width: 300px;
+            height: 220px;
+            /* border: 1px solid yellow; */
+            border-radius: 10px;
+            background-color: white;
+            margin-left: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .advance:hover {
+            background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127));
+        }
+
+        .advance h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .advance p {
+            text-align: center;
+
+        }
+
+        /* //////////1////////////// */
+        .inteli-1 {
+            width: 100px;
+            height: 100px;
+            /* border: 1px solid blue; */
+            margin-left: 30%;
+            margin-top: 25px;
+        }
+
+        .AI-chippest {
+            width: 300px;
+            height: 220px;
+            /* border: px solid yellow; */
+            box-shadow: black;
+            border-radius: 10px;
+            background-color: white;
+            margin-left: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .AI-chippest:hover {
+            background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127));
+
+        }
+
+        .AI-chippest h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .AI-chippest p {
+            text-align: center;
+
+        }
+
+        /* ////////////2////////////// */
+        .roboticarm {
+            width: 25%;
+            height: 80%;
+            /* border: 1px solid green; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 100px;
+
+        }
+
+        .Cloud-AI-intergration:hover {
+            background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127));
+
+        }
+
+        .inteli-2 {
+            width: 100px;
+            height: 100px;
+            /* border: 1px solid blue; */
+            margin-left: 30%;
+            margin-top: 25px;
+        }
+
+        .Cloud-AI-intergration {
+            width: 300px;
+            height: 220px;
+            /* border: 1px solid yellow; */
+            border-radius: 10px;
+            background-color: white;
+            margin-left: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .Cloud-AI-intergration h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .Cloud-AI-intergration p {
+            text-align: center;
+
+        }
+
+        /* ___________________________ */
+        .inteli-3 {
+            width: 100px;
+            height: 100px;
+            /* border: 1px solid blue; */
+            margin-left: 30%;
+            margin-top: 25px;
+        }
+
+        /* /////////////////3/////////////// */
+        .Robotic-Arm {
+            width: 300px;
+            height: 220px;
+            /* border: 1px solid yellow; */
+            border-radius: 10px;
+            background-color: white;
+            margin-left: 10px;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .Robotic-Arm:hover {
+            background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127));
+
+        }
+
+        .Robotic-Arm h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .Robotic-Arm p {
+            text-align: center;
+
+        }
+
+
+        /* ///////////////?????????????///////////// */
+
+        .artificial-text {
+            width: 43%;
+            height: 80%;
+            /* border: 1px solid green; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 100px;
+            margin-left: 20px;
+        }
+
+        .artificial-text h1 {
+            margin-top: 40px;
+            text-align: left;
+            font-size: 45px;
+
+        }
+
+        .artificial-text p {
+            margin-top: 40px;
+            text-align: left;
+            font-size: 20px;
+
+        }
+
+        .button {
+            width: 150px;
+            height: 50px;
+            background-color: #04AA6D;
+            /* Green */
+            border: none;
+            border-radius: 10px;
+            color: white;
+            /* padding: 15px 32px; */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        .section3 {
+            width: 100%;
+            height: 600px;
+            /* border: 1px solid red; */
+        }
+
+        .realistic {
+            width: 45%;
+            height: 500px;
+            /* border: 1px solid blue; */
+            margin-left: 30px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .realistic h1 {
+            text-align: left;
+            font-size: 50px;
+            margin-top: 30px;
+
+        }
+
+        .realistic p {
+            text-align: left;
+            font-size: 20px;
+            margin-top: 30px;
+
+        }
+
+        #arrow {
+            font-size: 40px;
+            margin-top: 5px;
+            margin-left: 5px;
+            /* border: 1px solid green; */
+
+        }
+
+        .buttonarrow {
+            width: 260px;
+            height: 50px;
+            /* border: 1px solid green; */
+            margin-top: 20px;
+            margin-left: 20px;
+            position: relative
+        }
+
+        .video1 {
+
+            width: 48%;
+            height: 500px;
+            /* border: 1px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+
+
+        }
+
+        .button1 {
+            width: 170px;
+            height: 50px;
+            border-radius: 20px;
+            background: linear-gradient(120deg, rgb(5, 19, 218), rgb(5, 209, 49));
+            margin: auto;
+            /* margin-left: 15px; */
+
+        }
+
+
+        .video {
+            width: 100%;
+            height: 500px;
+
+            /* display: inline-block;
+            /* vertical-align: top; */
+
+        }
+
+        .arrowdiv {
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid red; */
+            border-radius: 30px;
+            position: absolute;
+            margin: auto;
+            top: 0px;
+            margin-left: 200px;
+
+        }
+
+        /* /////////////??????????/////////////// */
+        .color {
+            width: 100%;
+            height: 250px;
+            /* border: 1px solid yellow; */
+            background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127));
+            padding-top: 50px;
+        }
+
+        .colorliner {
+            width: 200px;
+            height: 150px;
+            /* border: 1px solid red; */
+            position: relative;
+            margin-left: 100px;
+            display: inline-block;
+        }
+
+        .pic {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .colorliner p {
+            font-size: 25px;
+            color: white;
+            position: absolute;
+            top: 25px;
+            left: 50px;
+        }
+
+        /* /////////////?????????//////////// */
+        .ourservice {
+            width: 100%;
+            height: 1000px;
+            /* border: 1px solid blue; */
+            background-color: rgb(239, 241, 247);
+            padding-top: 1px;
+            /* margin: auto; */
+
+        }
+
+        .ourservice h1 {
+
+            text-align: center;
+            font-size: 50px;
+            margin-top: 100px;
+
+        }
+
+        .servicesdetail {
+            width: 90%;
+            height: 350px;
+            /* border: 1px solid yellow; */
+            margin-top: 30px;
+            margin-left: 60px;
+        }
+
+        .VirtualAssistants,
+        .VideosSurveillance,
+        .Social-Media-Services {
+            width: 350px;
+            height: 350px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            background-color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            padding-top: 20px;
+
+        }
+
+        .VirtualAssistants:hover,
+        .VideosSurveillance:hover,
+        .Social-Media-Services:hover {
+            background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127));
+
+
+
+        }
+
+        .vertual-cont {
+            margin: auto;
+            /* border: 2px solid red; */
+            width: 100px;
+            height: 100px;
+        }
+
+        .vertual {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .VirtualAssistants h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .VirtualAssistants p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .VideosSurveillance h2 {
+            text-align: center;
+            margin-top: 20px;
+
+
+        }
+
+        .VideosSurveillance p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .Social-Media-Services h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .Social-Media-Services p {
+            text-align: center;
+            margin-top: 20px;
+
+
+        }
+
+        /* /////////////////////??????????/////////////// */
+        .Online-Customer-Support,
+        .Search-Engine-Result-Refining,
+        .Online-Fraud-Detection {
+            width: 350px;
+            height: 350px;
+            /* border: 1px solid black; */
+            border-radius: 10px;
+            background-color: white;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 40px;
+            padding-top: 20px;
+
+        }
+
+        .Online-Customer-Support:hover,
+        .Search-Engine-Result-Refining:hover,
+        .Online-Fraud-Detection:hover {
+            background: linear-gradient(120deg, rgb(1, 162, 242), rgb(8, 197, 127));
+        }
+
+        .vertual-cont {
+            margin: auto;
+            /* border: 2px solid red; */
+            width: 100px;
+            height: 100px;
+        }
+
+        .vertual {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .Online-Customer-Support h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .Online-Customer-Support p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .Search-Engine-Result-Refining h2 {
+            text-align: center;
+            margin-top: 20px;
+
+
+        }
+
+        .Search-Engine-Result-Refining p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .Online-Fraud-Detection h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .Online-Fraud-Detection p {
+            text-align: center;
+            margin-top: 20px;
+
+        }
+
+        .lastproject {
+            width: 100%;
+            height: 600px;
+            /* border: 1px solid red; */
+            padding: 1px;
+            position: relative;
+            /* margin-top: 50px; */
+        }
+
+        .projectline {
+            width: 150px;
+            height: 10px;
+            /* border: 1px solid green; */
+            background: linear-gradient(120deg, rgb(5, 19, 218), rgb(5, 209, 49));
+            position: absolute;
+            top: 7px;
+            z-index: -1;
+            margin-top: 60px;
+            margin-left: 50px;
+
+        }
+
+        .pro {
+
+            width: 300px;
+            height: 30px;
+            /* border: 1px solid green; */
+            margin: auto;
+            margin-top: 45px;
+
+        }
+
+
+
+        .pro p {
+            font-size: 30px;
+            text-align: left;
+            position: relative;
+            /* top: 30px; */
+            /* left: 100px; */
+        }
+
+        .parentslider {
+            width: 85%;
+            height: 340px;
+            /* border: 1px solid blue; */
+            margin: auto;
+            /* background-color: #04AA6D; */
+            margin-top: 50px;
+            overflow: hidden;
+        }
+
+        .slider {
+            width: 200%;
+            height: 100%;
+            /* border: 1px solid red; */
+            /* background-color: orangered; */
+            animation-name: move;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes move {
+            from {
+                margin-left: 0;
+            }
+
+            to {
+                margin-left: -100%;
+            }
+
+        }
+
+        .slide {
+            width: 15%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+
+
+        }
+
+        .slides {
+            margin-left: 40px;
+        }
+
+
+
+        .texture {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: 0.4s;
+            opacity: 0;
+        }
+
+        .slide:hover .texture {
+            opacity: 0.5;
+        }
+
+        .slide:hover .slide-p {
+            bottom: 10px;
+        }
+
+        .pic1,
+        .pic2,
+        .pic3,
+        .pic4,
+        .pic5,
+        .pic6 {
+            width: 100%;
+            height: 100%;
+            /* margin-top: 3px; */
+        }
+
+        .slide-p {
+            position: absolute;
+            left: 50px;
+            bottom: -30px;
+            transition: 0.4s;
+            color: white;
+            font-size: 30px
+        }
+
+        /* ///////////////??????????/////////// */
+        .text-1 {
+            width: 100%;
+            height: 100vh;
+            /* border: 0px solid blue; */
+            position: relative;
+            /* margin-top: 40px; */
+            background-image: url(./NEURON/bg\ \(1\).jpg);
+        }
+
+        .newpic {
+            width: 100%;
+            height: 90vh;
+            /* border: 1px solid red; */
+
+        }
+
+        .invalop {
+            width: 80%;
+            height: 70%;
+            /* border: 1px solid black; */
+            background-color: white;
+            box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
+            position: absolute;
+            border-radius: 10px;
+            top: -120px;
+            left: 150px;
+        }
+
+        .invalop1 {
+            width: 300px;
+            height: 50vh;
+            /* border: 1px solid red; */
+            position: relative;
+            top: 100px;
+            /* margin-left: 20p; */
+            /* margin-top: 25px; */
+
+        }
+
+        .icon-text {
+            margin: auto;
+            font-size: 50px;
+            margin-left: 400px;
+            vertical-align: top;
+            padding-top: 30px;
+            margin-top: -180px;
+        }
+
+        .fa-envelope-open-text {
+            font-size: 300px;
+            color: blue;
+            text-align: center;
+            /* border: 1px solid #000; */
+            /* margin-top: 60px; */
+            /* margin-left: 20px; */
+        }
+
+        .form {
+            width: 450px;
+            height: 30px;
+            /* border: 1px solid gray; */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin-left: 400px;
+            margin-top: 30px;
+            /* text-transform: uppercase; */
+            text-align: justify;
+
+        }
+
+        .textpic {
+            width: 1050px;
+            height: 60px;
+            /* border: 1px solid red; */
+            /* background-color: #04AA6D; */
+            margin-top: 200px;
+            margin-left: 20px;
+        }
+
+        .textpic1 {
+            width: 850px;
+            height: 60px;
+            /* border: 1px solid red; */
+            /* background-color: #04AA6D; */
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+        .porello,
+        .west,
+        .binary,
+        .pedestal {
+            margin-left: 40px;
+        }
+
+        /* ///////////chacke this file ///////// */
+
+
+        .wework {
+            width: 100%;
+            height: 80%;
+            /* border: 2px solid red; */
+            /* background-color: aqua; */
+            /* margin: auto; */
+            /* margin-top: 225px; */
+        }
+
+        .howworks {
+            width: 25%;
+            height: 9%;
+            /* border: 1px solid brown; */
+            /* background-color: cadetblue; */
+            font-size: 50px;
+            text-align: center;
+            margin-left: 500px;
+            margin-top: 50px;
+            position: relative;
+
+        }
+
+        .workline {
+            width: 150px;
+            height: 10px;
+            /* border: 1px solid green; */
+            background: linear-gradient(120deg, rgb(5, 19, 218), rgb(5, 209, 49));
+            position: absolute;
+            top: 40px;
+            margin-left: 50px;
+            padding: 1px;
+        }
+
+        .fourpic {
+            width: 1100px;
+            height: 150px;
+            /* border: 1px solid green; */
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+
+        .firstpic,
+        .secondpic,
+        .thirdpic,
+        .fourthpic {
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+        }
+
+        .one1,
+        .two2,
+        .three,
+        .four4 {
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 100px;
+            font-size: 20px;
+        }
+
+        .boll {
+            float: left;
+        }
+
+        .mainline {
+            /* border: 1px solid blue; */
+            /* background-color: black; */
+            width: 1100px;
+            height: 40px;
+            margin-top: 100px;
+            margin-left: 180px;
+
+        }
+
+        .oneboll {
+
+            width: 30px;
+            height: 30px;
+            /* border: 1px solid green; */
+            background: linear-gradient(120deg, rgb(5, 19, 218), rgb(5, 209, 49));
+            border-radius: 30px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .outline {
+            width: 40px;
+            height: 40px;
+            border: 1px dotted blue;
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 50%;
+        }
+
+        #location-arrow {
+            color: blue;
+            transform: rotate(45deg);
+            display: inline-block;
+            vertical-align: top;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .linedotted {
+            width: 200px;
+            border: 1px dotted blue;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 18px;
+
+        }
+
+        /* //////////????????????//////////// */
+
+
+        .blogpost {
+
+            width: 100%;
+            height: 100vh;
+            background-color: (239, 241, 247);
+            /* border: 1px solid blue; */
+
+        }
+
+        .recentblog {
+            width: 30%;
+            height: 9%;
+            /* border: 1px solid brown; */
+            /* background-color: cadetblue; */
+            font-size: 50px;
+            text-align: center;
+            margin-left: 500px;
+            margin-top: 50px;
+            position: relative;
+
+        }
+
+        .blogline {
+            width: 150px;
+            height: 10px;
+            /* border: 1px solid green; */
+            background: linear-gradient(120deg, rgb(5, 19, 218), rgb(5, 209, 49));
+            position: absolute;
+            top: 40px;
+            margin-left: 50px;
+            padding: 1px;
+        }
+
+        .bloger-slider {
+            width: 1300px;
+            height: 75vh;
+            /* border: 1px solid black; */
+            margin-left: 30px;
+            margin-top: 20px;
+            overflow: hidden;
+
+        }
+
+        .allslide {
+            width: 165%;
+            height: 95%;
+            /* border: 1px solid brown; */
+            margin-top: 15px;
+            animation-name: movefive;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes movefive {
+            0% {
+
+                margin-left: 0;
+            }
+
+            20% {
+                margin-left: 0%;
+            }
+
+            25% {
+                margin-left: -30%;
+
+            }
+
+            50% {
+                margin-left: -30%;
+            }
+
+
+            100% {
+                margin-left: -30%;
+            }
+        }
+
+        .oneslid,
+        .twoslid,
+        .threeslid,
+        .fourslid {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 15px;
+            margin-left: 70px;
+
+        }
+
+        .oneslid,
+        .twoslid,
+        .threeslid,
+        .fourslid {
+            width: 345px;
+            height: 70vh;
+
+        }
+
+        .picblog {
+            width: 90%;
+            height: 200px;
+            /* border: 1px solid blue; */
+        }
+
+        .date {
+            width: 1oopx;
+            height: 30px;
+            /* border: 1px solid green; */
+        }
+
+        .user {
+            font-size: 5px;
+            margin-top: 10px;
+            margin-left: 50px;
+
+        }
+
+        .blogertext {
+            width: 100%;
+            height: 130px;
+            /* border: 1px solid yellowgreen; */
+            margin-top: 30px;
+
+
+        }
+
+        .blogertext h3 {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        .blogertext p {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        .button {
+            background: linear-gradient(120deg, rgb(5, 19, 218), rgb(5, 209, 49));
+            margin-top: 15px;
+
+        }
+
+        .form1 {
+            width: 100%;
+            height: 100vh;
+            /* border: 1px solid red; */
+            margin-top: 200px;
+            background-image: url(./NEURON/bg\ \(1\).jpg);
+        }
+
+        .contactus {
+
+            width: 30%;
+            height: 100%;
+            /* border: 1px solid white; */
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 20px;
+            margin-top: -100px;
+            padding: 60px;
+
+        }
+
+        #map {
+            font-size: 130px;
+            color: rgb(5, 19, 218);
+            /* margin-left: 50px; */
+            /* margin-top: 50px; */
+
+        }
+
+        .form2 {
+            width: 90%;
+            height: 9%;
+            /* border: 1px solid brown; */
+            /* background-color: cadetblue; */
+            font-size: 35px;
+            text-align: center;
+            /* margin-left: 500px; */
+            margin-top: 40px;
+            position: relative;
+
+        }
+
+        .gpsline {
+            width: 150px;
+            height: 10px;
+            /* border: 1px solid green; */
+            background: linear-gradient(120deg, rgb(5, 19, 218), rgb(5, 209, 49));
+            position: absolute;
+            top: 35px;
+            /* margin-left: 80px; */
+            padding: 1px;
+        }
+
+        .visit {
+            /* margin-left: 100px; */
+            margin-top: 30px;
+
+        }
+
+        #visit1 {
+            font-size: 30px;
+            margin: auto;
+
+
+        }
+
+        .call {
+            /* margin-left: 100px; */
+            margin-top: 30px;
+        }
+
+        #mobile {
+            font-size: 30px;
+            margin: auto;
+            /* margin-left: 30px; */
+
+        }
+
+
+        .email-us {
+            /* margin-left: 100px; */
+            margin-top: 30px;
+
+        }
+
+        #envelop {
+
+            font-size: 50px;
+            margin: auto;
+            /* margin-left: 30px; */
+            /* border: 1px solid green; */
+        }
+
+
+        .forminput {
+            width: 800px;
+            height: 500px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            /* background-color: white; */
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+
+        .forminer,
+        .formdata,
+        .formnumber,
+        .formsubject {
+            width: 250px;
+            height: 40px;
+            /* border: 1px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+            background-color: rgb(79, 195, 230);
+            margin-left: 100px;
+            margin-top: 50px;
+
+        }
+
+        .message1 {
+            width: 600px;
+            height: 200px;
+            /* border: 1px solid blue; */
+            background-color: rgb(79, 195, 230);
+            margin-top: 30px;
+            margin-left: 100px;
+
+        }
+
+        .submit {
+
+            width: 600px;
+            height: 40px;
+            /* border: 1px solid blue; */
+            border-radius: 5px;
+            background-color: white;
+            margin-top: 40px;
+            margin-left: 100px;
+
+        }
+
+        /* ======================== */
+        .footer {
+            width: 100%;
+            height: 400px;
+            /* border: 1px solid red; */
+            background-color: rgb(238, 241, 248);
+
+        }
+
+        .neurondetail {
+            width: 25%;
+            height: 320px;
+            /* border: 2px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 70px;
+            margin-left: 30px;
+            padding: 50px;
+
+        }
+
+        .logolast {
+            width: 100%;
+            height: 15%;
+            /* border: 1px solid black; */
+            vertical-align: top;
+            color: black;
+        }
+
+        .lastlogo {
+            /* text-align: center; */
+            /* margin-top: 10px; */
+            /* margin-left: 50px; */
+            color: black;
+
+        }
+
+        .textfooter p {
+            /* margin-left: 30px; */
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        .iconbox {
+            width: 200px;
+            height: 30px;
+            margin-top: 20px;
+            color: blue;
+
+            letter-spacing: 20px;
+
+
+        }
+
+
+
+        .workhours {
+            width: 270px;
+            height: 320px;
+            /* border: 1px solid blue; */
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 60px;
+            margin-top: 70px;
+
+        }
+
+        .subline {
+            width: 70px;
+            height: 5px;
+            /* border: 1px solid green; */
+            background: linear-gradient(120deg, rgb(5, 19, 218), rgb(5, 209, 49));
+        }
+
+        .subhours {
+            margin: auto;
+            margin-left: 50px;
+            margin-top: 50px;
+
+        }
+
+        /* ============= */
+        .NAVIGATE {
+            width: 270px;
+            height: 320px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 70px;
+
+        }
+
+        .subline {
+            width: 70px;
+            height: 5px;
+            /* border: 1px solid green; */
+            background: linear-gradient(120deg, rgb(5, 19, 218), rgb(5, 209, 49));
+        }
+
+        .subNAVIGATE {
+            /* border: 1px solid gray; */
+            /* margin: auto; */
+            margin-left: 50px;
+            margin-top: 50px;
+
+
+        }
+
+        .subtage {
+            width: 140px;
+            height: 200px;
+            /* border: 1px solid green; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+
+        }
+
+        .tage {
+            width: 70px;
+            height: 100px;
+            /* border: 1px solid green; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+
+        }
+
+        /* ---------------------------- */
+
+        .PRIVACY-TOS {
+            width: 140px;
+            height: 320px;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 70px;
+
+        }
+
+        .subline {
+            width: 70px;
+            height: 5px;
+            /* border: 1px solid green; */
+            background: linear-gradient(120deg, rgb(5, 19, 218), rgb(5, 209, 49));
+        }
+
+        .subPRIVACY {
+            /* border: 1px solid gray; */
+            margin: auto;
+            /* margin-left: 50px; */
+            margin-top: 50px;
+
+
+        }
+
+        .subtage {
+            width: 120px;
+            height: 200px;
+            /* border: 1px solid green; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+
+        }
+
+        .tage {
+            width: 70px;
+            height: 100px;
+            /* border: 1px solid green; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 30px;
+
+        }
+
+
+
+
+        /* =================================== */
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+        <div class="background">
+            <div class="top">
+                <div class="email">
+                    <h4><i class="fa-solid fa-envelope"></i> info@yourwebsite.com</h4>
+                    <p><i class="fa-solid fa-phone"></i> (+123) 456789</p>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-google-plus-g"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+            <div class="navigation">
+
+                <div class="logowhite">
+                    <img src="./NEURON/logo-white.png" alt="">
+                </div>
+                <div class="menu-list">
+                    <ul>
+                        <li class="home home-grey">HOME
+                            <div class="drop-down">
+                                <ul>
+                                    <li class="home1">Home one</li>
+                                    <li class="home2">Home one</li>
+                                    <li class="home3">Home one</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="about">ABOUT</li>
+                        <li class="features">FEATURES</li>
+                        <li class="pages">PAGES
+                            <div class="drop-down1">
+                                <ul>
+                                    <li class="Software">Software Demo</li>
+                                    <li class="mobile">Mobile App</li>
+                                    <li class="team">Team Page</li>
+                                    <li class="Privacy">Privacy Policy Page</li>
+                                </ul>
+                                <ul id="drop2">
+                                    <li class="pricing">Pricing plan</li>
+                                    <li class="chatbot">ChatBot</li>
+                                    <li class="login">Login</li>
+                                    <li class="register">Register</li>
+                                </ul>
+                                <ul id="drop3">
+                                    <li class="download">Download</li>
+                                    <li class="coming">Coming Soon</li>
+                                    <li class="error">404 Error</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- ======================== -->
+                        <li class="shop shop-gray">SHOP
+                            <div class="drop-down4">
+                                <ul>
+                                    <li class="shop1">shop</li>
+                                    <li class="shop-single">shop Single</li>
+                                    <li class="cart">Cart</li>
+                                    <li class="checkout">Checkout</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="blog blog-gray">BLOG
+                            <div class="drop-down5">
+                                <ul>
+                                    <li class="blog1">Blog</li>
+                                    <li class="left-side">Blog left sidebar</li>
+                                    <li class="right-side">Blog right sidebar</li>
+                                    <li class="blog-detail">Blog Detail</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="home">CONTACT</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon2">
+                <i class="fa-solid fa-bag-shopping" id="bage"></i>
+                <i class="fa-solid fa-magnifying-glass" id="glass"></i>
+            </div>
+
+            <div class="linercolor">
+                <!-- ////////////?????????/////////// -->
+                <div class="text">
+                    <h1> AI & Machine Learing
+                        <br> Products Creators
+                    </h1>
+                    <p> Innovative machine learning profucts and services
+                        <br>on a trusted platform.
+                    </p>
+                    <button class="button">LEARN MORE</button>
+                    <button class="button">join now</button>
+                </div>
+                <div class="pic-two">
+                    <div class="animation">
+                        <img class="anim" src="./NEURON/sl1-ly1.png" alt="">
+                    </div>
+                    <div class="animation1">
+                        <img class="anim2" src="./NEURON/sl1-ly2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--  //////////////SECTION 2///////// -->
+            <div class="section2">
+                <div class="fivepeice">
+                    <div class="Aichippest">
+                        <div class="advance">
+                            <img class="inteli" src="./NEURON/artificial/artificial-intelligence.png" alt="">
+                            <br>
+                            <h1> Advanced Programing </h1>
+                            <p>Find out what's working and
+                                <br> what's not Dig your data to find
+                            </p>
+                        </div>
+                        <!-- ////////1/////////// -->
+                        <div class="AI-chippest">
+                            <img class="inteli-1" src="./NEURON/artificial/ai.png" alt="">
+                            <br>
+                            <h1> AI Chippest</h1>
+                            <p>Find out what's working and
+                                <br> what's not Dig your data to find
+                            </p>
+                        </div>
+                    </div>
+                    <!-- //////////2//////// -->
+                    <div class="roboticarm">
+                        <div class="Cloud-AI-intergration">
+                            <img class="inteli-2" src="./NEURON/artificial/artificial-intelligence (1).png" alt="">
+                            <br>
+                            <h1> Cloud-AI-intergration</h1>
+                            <p>Find out what's working and
+                                <br> what's not Dig your data to find
+                            </p>
+                        </div>
+                        <div class="Robotic-Arm">
+                            <img class="inteli-3" src="./NEURON/artificial/robotic-arm.png" alt="">
+                            <br>
+                            <h1> Robotic Arm</h1>
+                            <p>Find out what's working and
+                                <br> what's not Dig your data to find
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ///////////?????????//////////// -->
+
+                    <div class="artificial-text">
+                        <h1>Power Your Creativity With
+                            <br> Artificial Intelligence
+                        </h1>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at
+                            <br>dictum risus, non suscipit arcu. Quisque aliquam posuere tortor,
+                            <br> sit amet convallis nunc scelerisque in.<br>
+                            <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+                            <br> eius molesti ae facere, natus reprehenderit eaque eum, autem
+                            <br> ipsam. Magni, error. Tem pora odit laborum iure inventore
+                            <br> possimus laboriosam qui nam. Fugit!
+                        </p>
+                        <button class="button">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ///////////SECTION 3///////// -->
+            <div class="section3">
+                <div class="realistic">
+                    <h1> We Create The Most Realistic
+                        <br> Artificial Intelligence
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at dictum risus,
+                        non suscipit arcu. Quisque aliquam posuere tortor, sit amet convallis nunc
+                        scelerisque in.
+                        <br>
+
+                        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eius molesti
+                        ae facere, natus reprehenderit eaque eum, autem ipsam. Magni, error. Tem
+                        pora odit laborum iure inventore possimus laboriosam qui nam. Fugit!
+                    </p>
+                    <div class="buttonarrow">
+                        <button class="button1">LEARN MORE</button>
+                        <div class="arrowdiv">
+                            <i class="fa-regular fa-square-caret-right" id="arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="video1">
+                    <img class="video" src="./NEURON/about-video-part.png" alt="">
+                </div>
+                <!-- ////////??????/////////// -->
+                <div class="color">
+                    <div class="colorliner">
+                        <img class="pic" src="./NEURON/count-shape.png" alt="">
+                        <p>6000+<br>Complete Project </p>
+                    </div>
+                    <div class="colorliner">
+                        <img class="pic" src="./NEURON/count-shape.png" alt="">
+                        <p>400+<br>NLP Experts</p>
+                    </div>
+                    <div class="colorliner">
+                        <img class="pic" src="./NEURON/count-shape.png" alt="">
+                        <p>3500+<br>Satisfied Clients</p>
+                    </div>
+                    <div class="colorliner">
+                        <img class="pic" src="./NEURON/count-shape.png" alt="">
+                        <p>8000+<br>Industires Served</p>
+                    </div>
+
+                </div>
+                <!-- ///////////????????////////// -->
+
+
+                <div class="ourservice">
+                    <h1>OUR SERVICE</h1>
+                    <div class="servicesdetail">
+                        <div class="VirtualAssistants">
+                            <div class="vertual-cont">
+
+                                <img class="vertual" src="./NEURON/artificial/italigent.jpg" alt="">
+                            </div>
+                            <h2>Virtual Personal Assistants</h2>
+                            <p>Capitalize on low hanging fruit to
+                                <br>identify a ball park value added activity
+                                <br> to beta test. Override the digital divide
+                                <br> with additional
+                            </p>
+                        </div>
+                        <div class="VideosSurveillance">
+                            <div class="vertual-cont">
+
+                                <img class="vertual" src="./NEURON/artificial/italigent.jpg" alt="">
+                            </div>
+
+                            <h2>Videos Surveillance</h2>
+                            <p>Capitalize on low hanging fruit to
+                                <br>identify a ball park value added activity
+                                <br> to beta test. Override the digital divide
+                                <br> with additional
+                            </p>
+                        </div>
+                        <div class="Social-Media-Services">
+                            <div class="vertual-cont">
+
+                                <img class="vertual" src="./NEURON/artificial/italigent.jpg" alt="">
+                            </div>
+                            <h2>Social Media Services</h2>
+                            <p>Capitalize on low hanging fruit to
+                                <br>identify a ball park value added activity
+                                <br> to beta test. Override the digital divide
+                                <br> with additional
+                            </p>
+                        </div>
+                    </div>
+                    <!-- ////////?????////////// -->
+                    <div class="servicesdetail">
+                        <div class="Online-Customer-Support">
+                            <div class="vertual-cont">
+
+                                <img class="vertual" src="./NEURON/artificial/italigent.jpg" alt="">
+                            </div>
+                            <h2>Online Customer Support</h2>
+                            <p>Capitalize on low hanging fruit to
+                                <br>identify a ball park value added activity
+                                <br> to beta test. Override the digital divide
+                                <br> with additional
+                            </p>
+                        </div>
+                        <div class="Search-Engine-Result-Refining">
+                            <div class="vertual-cont">
+
+                                <img class="vertual" src="./NEURON/artificial/italigent.jpg" alt="">
+                            </div>
+
+                            <h2>Search Engine Result Refining</h2>
+                            <p>Capitalize on low hanging fruit to
+                                <br>identify a ball park value added activity
+                                <br> to beta test. Override the digital divide
+                                <br> with additional
+                            </p>
+                        </div>
+                        <div class="Online-Fraud-Detection">
+                            <div class="vertual-cont">
+
+                                <img class="vertual" src="./NEURON/artificial/italigent.jpg" alt="">
+                            </div>
+                            <h2>Online Fraud Detection</h2>
+                            <p>Capitalize on low hanging fruit to
+                                <br>identify a ball park value added activity
+                                <br> to beta test. Override the digital divide
+                                <br> with additional
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- ///////////???????//////////// -->
+
+                <div class="lastproject">
+                    <div class="pro">
+                        <p>OUR LAST PROJECT </p>
+                        <div class="projectline">
+                        </div>
+                    </div>
+                    <!-- /////////???????????  -->
+                    <div class="parentslider">
+                        <div class="slider">
+                            <div class="slide">
+                                <img class="pic1" src="./NEURON/slid/1.jpg" alt="">
+                                <div class="texture"></div>
+                                <p class="slide-p"><b>Vacol aviator AI</p>
+                            </div>
+                            <!-- ============================================ -->
+                            <div class="slide slides">
+                                <img class="pic1" src="./NEURON/slid/1.jpg" alt="">
+                                <div class="texture"></div>
+                                <p class="slide-p"><b>Vacol aviator AI</p>
+                            </div>
+                            <!-- ___________________________ -->
+
+                            <div class="slide slides">
+                                <img class="pic1" src="./NEURON/slid/1.jpg" alt="">
+                                <div class="texture"></div>
+                                <p class="slide-p"><b>Vacol aviator AI</p>
+                            </div>
+                            <!-- --------------------- -->
+                            <div class="slide slides">
+                                <img class="pic1" src="./NEURON/slid/3.jpg" alt="">
+                                <div class="texture"></div>
+                                <p class="slide-p"><b>Vacol aviator AI</p>
+                            </div>
+                            <!-- --------------------------- -->
+
+                            <div class="slide slides">
+                                <img class="pic1" src="./NEURON/slid/1.jpg" alt="">
+                                <div class="texture"></div>
+                                <p class="slide-p"><b>Vacol aviator AI</p>
+                            </div>
+                            <!-- ۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔۔ -->
+                            <div class="slide slides">
+                                <img class="pic1" src="./NEURON/slid/3.jpg" alt="">
+                                <div class="texture"></div>
+                                <p class="slide-p"><b>Vacol aviator AI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ////////////////?????????????////////////// -->
+
+
+
+                <div class="text-1">
+                    <div class="invalop">
+                        <div class="invalop1">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+                        <div class="icon-text">
+                            Don’t Miss Our News
+                            <br>And Updates!
+                        </div>
+                        <div class="form">
+                            Enter Your Email
+                        </div>
+                        <div class="textpic">
+                            <img class="progeny" src="./NEURON/text img/progeny.png" alt="">
+                            <img class="porello" src="./NEURON/text img/Porello.png" alt="">
+                            <img class="west" src="./NEURON/text img/pro=west.png" alt="">
+                            <img class="binary" src="./NEURON/text img/binary 2.png" alt="">
+                            <img class="pedestal" src="./NEURON/text img/pedestal2.png" alt="">
+                        </div>
+                        <div class="textpic1">
+                            <img class="progeny" src="./NEURON/text img/progeny.png" alt="">
+                            <img class="porello" src="./NEURON/text img/Porello.png" alt="">
+                            <img class="west" src="./NEURON/text img/pro=west.png" alt="">
+                            <img class="binary" src="./NEURON/text img/binary 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /////////////??????Chack this up position???//////////// -->
+
+
+                <div class="wework">
+                    <div class="howworks">
+                        <p>How we works</p>
+                        <div class="workline">
+                        </div>
+                    </div>
+                    <div class="fourpic">
+                        <div class="one1">
+                            <img class="firstpic" src="./NEURON/artificial/automaton.png" alt="">
+                            <p>Data Generated </p>
+                        </div>
+                        <div class="two2">
+                            <img class="secondpic" src="./NEURON/artificial/ai.png" alt="">
+                            <p>Data Stored </p>
+                        </div>
+                        <dvi class="three">
+                            <img class="thirdpic" src="./NEURON/artificial/brain.webp" alt="">
+                            <p>Data Processing </p>
+                        </dvi>
+                        <div class="four4">
+                            <img class="fourthpic" src="./NEURON/artificial/italigent.jpg" alt="">
+                            <p>Actionable Insights </p>
+                        </div>
+                    </div>
+                    <div class="mainline">
+                        <div class="boll">
+                            <div class="outline">
+                                <div class="oneboll">
+                                </div>
+                            </div>
+                            <i id="location-arrow" class="fa-solid fa-location-arrow"></i>
+                            <div class="linedotted"></div>
+                        </div>
+
+                        <div class="boll">
+                            <div class="outline">
+                                <div class="oneboll">
+                                </div>
+                            </div>
+                            <i id="location-arrow" class="fa-solid fa-location-arrow"></i>
+                            <div class="linedotted"></div>
+                        </div>
+                        <div class="boll">
+                            <div class="outline">
+                                <div class="oneboll">
+                                </div>
+                            </div>
+                            <i id="location-arrow" class="fa-solid fa-location-arrow"></i>
+                            <div class="linedotted"></div>
+                        </div>
+                        <div class="boll">
+                            <div class="outline">
+                                <div class="oneboll">
+                                </div>
+                            </div>
+                            <i id="location-arrow" class="fa-solid fa-location-arrow"></i>
+                            <div class="linedotted"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /////////////??????????/////////// -->
+
+
+                <div class="blogpost">
+                    <div class="recentblog">
+                        <p>Recent Blog Post</p>
+                        <div class="blogline">
+                        </div>
+                    </div>
+                    <div class=bloger-slider>
+                        <div class="allslide">
+                            <div class="oneslid">
+                                <img class="picblog" src="./NEURON/blogpic/1 (1).jpg" alt="">
+                                <div class="blogtext">
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-check">Nov 28 2019</i>
+                                        <i class="fa-solid fa-user-tie">admin</i>
+                                        <i class="fa-regular fa-comment">comment</i>
+                                    </div>
+                                    <div class="blogertext">
+                                        <h3>Man in Red Plaid Shirt Talking on <br>Phone Terrace</h3>
+                                        <p>The Tutorial covers examples of
+                                            <br>identification And Rew Garfield and
+                                            <br>verifies if a picture
+                                        </p>
+                                        <button class="button">LEARN MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="twoslid">
+                                <img class="picblog" src="./NEURON/blogpic/1 (3).png" alt="">
+                                <div class="blogtext">
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-check">Nov 28 2019</i>
+                                        <i class="fa-solid fa-user-tie">admin</i>
+                                        <i class="fa-regular fa-comment">comment</i>
+                                    </div>
+                                    <div class="blogertext">
+                                        <h3>Man in Red Plaid Shirt Talking on <br>Phone Terrace</h3>
+                                        <p>The Tutorial covers examples of
+                                            <br>identification And Rew Garfield and
+                                            <br>verifies if a picture
+                                        </p>
+                                        <button class="button">LEARN MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="threeslid">
+                                <img class="picblog" src="./NEURON/blogpic/2 (1).jpg" alt="">
+                                <div class="blogtext">
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-check">Nov 28 2019</i>
+                                        <i class="fa-solid fa-user-tie">admin</i>
+                                        <i class="fa-regular fa-comment">comment</i>
+                                    </div>
+                                    <div class="blogertext">
+                                        <h3>Man in Red Plaid Shirt Talking on <br>Phone Terrace</h3>
+                                        <p>The Tutorial covers examples of
+                                            <br>identification And Rew Garfield and
+                                            <br>verifies if a picture
+                                        </p>
+                                        <button class="button">LEARN MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fourslid">
+                                <img class="picblog" src="./NEURON/blogpic/3 (1).jpg" alt="">
+                                <div class="blogtext">
+                                    <div class="date">
+                                        <i class="fa-regular fa-calendar-check">Nov 28 2019</i>
+                                        <i class="fa-solid fa-user-tie">admin</i>
+                                        <i class="fa-regular fa-comment">comment</i>
+                                    </div>
+                                    <div class="blogertext">
+                                        <h3>Man in Red Plaid Shirt Talking on <br>Phone Terrace</h3>
+                                        <p>The Tutorial covers examples of
+                                            <br>identification And Rew Garfield and
+                                            <br>verifies if a picture
+                                        </p>
+                                        <button class="button">LEARN MORE</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ -->
+                <div class="form1">
+                    <div class="contactus">
+                        <i class="fa-solid fa-map-location-dot" id="map"></i>
+                        <div class="form2">
+                            <p>Contact With Us</p>
+                            <div class="gpsline">
+                            </div>
+                        </div>
+                        <div class="visit">
+                            <i class="fa-solid fa-location-crosshairs" id="visit1"></i>
+                            <h3>Visit US</h3>
+                            <p>530 Old Buffalo street
+                                <br>Northwest #205, NewYork-3087
+                            </p>
+
+                        </diV>
+                        <div class="call">
+                            <i class="fa-solid fa-mobile-screen" id="mobile"></i>
+                            <h3>Call Us</h3>
+                            <p>+1 (123) -456-7890
+                                <br>+1 (123) -456-7890
+                            </p>
+                        </diV>
+                        <div class="email-Us">
+                            <i class="fa-solid fa-envelope-open-text" id="envelop"></i>
+                            <h3>Email-Us</h3>
+                            <p>530 Old Buffalo street
+                                <br>Northwest #205, NewYork-3087
+                            </p>
+                        </diV>
+                    </div>
+                    <div class="forminput">
+                        <div class="forminer">Name </div>
+                        <div class="formdata">E-mail
+                        </div>
+                        <div class="formnumber">Phone Number
+                        </div>
+                        <div class="formsubject">Subject
+                        </div>
+                        <div class="message1">Message
+                        </div>
+                        <div class="submit"> Submit </div>
+                    </div>
+                </div>
+                <!-- ---------------- -->
+                <div class="footer">
+                    <div class="neurondetail">
+                        <div class="logolast">
+                            <img class="lastlogo" src="./NEURON/logo (2).png" alt="">
+                        </div>
+                        <div class="textfooter">
+                            <p> Lorem ipsum dolor sit amet,
+                                <br> conse turini adipiscing elit, sed
+                                <br> do eiusmod tempor in cididunt
+                                <br>ut labore.
+                            </p>
+                            <div class="iconbox">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="workhours">
+                        <div class="subhours">
+                            <p>WORK HOURS</p>
+                            <div class="subline">
+
+                            </div>
+                            <div class="daytime">
+                                <br><br>
+                                <p> 10.00 AM - 6.00 PM , Monday -
+                                    <br> Saturday
+                                </p>
+                                <br><br>
+                                <p>Our Support and Sales team is
+                                    <br> available 24 * 7 to answer your
+                                    <br> queries
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ////////////////////// -->
+                    <div class="NAVIGATE">
+                        <div class="subNAVIGATE">
+                            <p>NAVIGATE</p>
+                            <div class="subline">
+                            </div>
+                            <div class="subtage">
+                                <p> About Us </p>
+                                <br>
+                                <p>Features </p>
+                                <br>
+                                <p>Mobile App</p>
+                                <br>
+                                <p>Software Demo</p>
+                                <br>
+                                <p>Software Download</p>
+                            </div>
+                            <div class="tage">
+                                <p> Blog </p>
+                                <br>
+                                <p>Team </p>
+                                <br>
+                                <p>ChatBot</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ----------------------- -->
+
+                    <div class="PRIVACY-TOS">
+                        <div class="subPRIVACY">
+                            <p>PRIVACY & TOS</p>
+                            <div class="subline">
+                            </div>
+                            <div class="subtage">
+                                <p> Privacy</p>
+                                <br>
+                                <p>Contact</p>
+                                <br>
+                                <p>Login</p>
+                                <br>
+                                <p>Register</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //////////?????????donet overlap line////////// -->
+            </div>
+
+    </main>
+</body>
+
+</html>
